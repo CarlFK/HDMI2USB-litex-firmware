@@ -1,0 +1,1970 @@
+{
+  "ctrl": {
+    "scratch": {
+      "name": "ctrl_scratch",
+      "address": 1610612740,
+      "size": 4,
+      "r": "rw",
+      "shadowed_address": 3758096388,
+      "value": 0
+    },
+    "bus": {
+      "errors": {
+        "name": "ctrl_bus_errors",
+        "address": 1610612756,
+        "size": 4,
+        "r": "ro",
+        "shadowed_address": 3758096404,
+        "value": 0
+      }
+    }
+  },
+  "encoder": {
+    "reader": {
+      "base": {
+        "name": "encoder_reader_base",
+        "address": 1610672128,
+        "size": 4,
+        "r": "rw",
+        "shadowed_address": 3758155776,
+        "value": 0
+      },
+      "h": {
+        "width": {
+          "name": "encoder_reader_h_width",
+          "address": 1610672144,
+          "size": 2,
+          "r": "rw",
+          "shadowed_address": 3758155792,
+          "value": 0
+        }
+      },
+      "v": {
+        "width": {
+          "name": "encoder_reader_v_width",
+          "address": 1610672152,
+          "size": 2,
+          "r": "rw",
+          "shadowed_address": 3758155800,
+          "value": 0
+        }
+      },
+      "start": {
+        "name": "encoder_reader_start",
+        "address": 1610672160,
+        "size": 1,
+        "r": "rw",
+        "shadowed_address": 3758155808,
+        "value": 0
+      },
+      "done": {
+        "name": "encoder_reader_done",
+        "address": 1610672164,
+        "size": 1,
+        "r": "ro",
+        "shadowed_address": 3758155812,
+        "value": 0
+      }
+    }
+  },
+  "ethmac": {
+    "sram": {
+      "writer": {
+        "slot": {
+          "name": "ethmac_sram_writer_slot",
+          "address": 1610653696,
+          "size": 1,
+          "r": "ro",
+          "shadowed_address": 3758137344,
+          "value": 0
+        },
+        "length": {
+          "name": "ethmac_sram_writer_length",
+          "address": 1610653700,
+          "size": 4,
+          "r": "ro",
+          "shadowed_address": 3758137348,
+          "value": 0
+        },
+        "errors": {
+          "name": "ethmac_sram_writer_errors",
+          "address": 1610653716,
+          "size": 4,
+          "r": "ro",
+          "shadowed_address": 3758137364,
+          "value": 0
+        },
+        "ev": {
+          "status": {
+            "name": "ethmac_sram_writer_ev_status",
+            "address": 1610653732,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758137380,
+            "value": 0
+          },
+          "pending": {
+            "name": "ethmac_sram_writer_ev_pending",
+            "address": 1610653736,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758137384,
+            "value": 0
+          },
+          "enable": {
+            "name": "ethmac_sram_writer_ev_enable",
+            "address": 1610653740,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758137388,
+            "value": 0
+          }
+        }
+      },
+      "reader": {
+        "start": {
+          "name": "ethmac_sram_reader_start",
+          "address": 1610653744,
+          "size": 1,
+          "r": "rw",
+          "shadowed_address": 3758137392,
+          "value": 0
+        },
+        "ready": {
+          "name": "ethmac_sram_reader_ready",
+          "address": 1610653748,
+          "size": 1,
+          "r": "ro",
+          "shadowed_address": 3758137396,
+          "value": 0
+        },
+        "level": {
+          "name": "ethmac_sram_reader_level",
+          "address": 1610653752,
+          "size": 1,
+          "r": "ro",
+          "shadowed_address": 3758137400,
+          "value": 0
+        },
+        "slot": {
+          "name": "ethmac_sram_reader_slot",
+          "address": 1610653756,
+          "size": 1,
+          "r": "rw",
+          "shadowed_address": 3758137404,
+          "value": 0
+        },
+        "length": {
+          "name": "ethmac_sram_reader_length",
+          "address": 1610653760,
+          "size": 2,
+          "r": "rw",
+          "shadowed_address": 3758137408,
+          "value": 0
+        },
+        "ev": {
+          "status": {
+            "name": "ethmac_sram_reader_ev_status",
+            "address": 1610653768,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758137416,
+            "value": 0
+          },
+          "pending": {
+            "name": "ethmac_sram_reader_ev_pending",
+            "address": 1610653772,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758137420,
+            "value": 0
+          },
+          "enable": {
+            "name": "ethmac_sram_reader_ev_enable",
+            "address": 1610653776,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758137424,
+            "value": 0
+          }
+        }
+      }
+    },
+    "preamble": {
+      "crc": {
+        "name": "ethmac_preamble_crc",
+        "address": 1610653780,
+        "size": 1,
+        "r": "ro",
+        "shadowed_address": 3758137428,
+        "value": 0
+      },
+      "errors": {
+        "name": "ethmac_preamble_errors",
+        "address": 1610653784,
+        "size": 4,
+        "r": "ro",
+        "shadowed_address": 3758137432,
+        "value": 0
+      }
+    },
+    "crc": {
+      "errors": {
+        "name": "ethmac_crc_errors",
+        "address": 1610653800,
+        "size": 4,
+        "r": "ro",
+        "shadowed_address": 3758137448,
+        "value": 0
+      }
+    }
+  },
+  "ethphy": {
+    "mdio": {
+      "w": {
+        "name": "ethphy_mdio_w",
+        "address": 1610651652,
+        "size": 1,
+        "r": "rw",
+        "shadowed_address": 3758135300,
+        "value": 0
+      },
+      "r": {
+        "name": "ethphy_mdio_r",
+        "address": 1610651656,
+        "size": 1,
+        "r": "ro",
+        "shadowed_address": 3758135304,
+        "value": 0
+      }
+    }
+  },
+  "front": {
+    "panel": {
+      "switches": {
+        "in": {
+          "name": "front_panel_switches_in",
+          "address": 1610635264,
+          "size": 1,
+          "r": "ro",
+          "shadowed_address": 3758118912,
+          "value": 0
+        }
+      },
+      "leds": {
+        "out": {
+          "name": "front_panel_leds_out",
+          "address": 1610635268,
+          "size": 1,
+          "r": "rw",
+          "shadowed_address": 3758118916,
+          "value": 0
+        }
+      }
+    }
+  },
+  "hdmi": {
+    "in": [
+      {
+        "edid": {
+          "hpd": {
+            "notif": {
+              "name": "hdmi_in0_edid_hpd_notif",
+              "address": 1610659840,
+              "size": 1,
+              "r": "ro",
+              "shadowed_address": 3758143488,
+              "value": 0
+            }
+          }
+        },
+        "clocking": {
+          "locked": {
+            "name": "hdmi_in0_clocking_locked",
+            "address": 1610659852,
+            "size": 1,
+            "r": "ro",
+            "shadowed_address": 3758143500,
+            "value": 0
+          },
+          "pll": {
+            "adr": {
+              "name": "hdmi_in0_clocking_pll_adr",
+              "address": 1610659856,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758143504,
+              "value": 0
+            },
+            "dat": {
+              "r": {
+                "name": "hdmi_in0_clocking_pll_dat_r",
+                "address": 1610659860,
+                "size": 2,
+                "r": "ro",
+                "shadowed_address": 3758143508,
+                "value": 0
+              },
+              "w": {
+                "name": "hdmi_in0_clocking_pll_dat_w",
+                "address": 1610659868,
+                "size": 2,
+                "r": "rw",
+                "shadowed_address": 3758143516,
+                "value": 0
+              }
+            },
+            "read": {
+              "name": "hdmi_in0_clocking_pll_read",
+              "address": 1610659876,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758143524,
+              "value": 0
+            },
+            "write": {
+              "name": "hdmi_in0_clocking_pll_write",
+              "address": 1610659880,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758143528,
+              "value": 0
+            },
+            "drdy": {
+              "name": "hdmi_in0_clocking_pll_drdy",
+              "address": 1610659884,
+              "size": 1,
+              "r": "ro",
+              "shadowed_address": 3758143532,
+              "value": 0
+            }
+          }
+        },
+        "chansync": {
+          "channels": {
+            "synced": {
+              "name": "hdmi_in0_chansync_channels_synced",
+              "address": 1610660008,
+              "size": 1,
+              "r": "ro",
+              "shadowed_address": 3758143656,
+              "value": 0
+            }
+          }
+        },
+        "resdetection": {
+          "hres": {
+            "name": "hdmi_in0_resdetection_hres",
+            "address": 1610660012,
+            "size": 2,
+            "r": "ro",
+            "shadowed_address": 3758143660,
+            "value": 0
+          },
+          "vres": {
+            "name": "hdmi_in0_resdetection_vres",
+            "address": 1610660020,
+            "size": 2,
+            "r": "ro",
+            "shadowed_address": 3758143668,
+            "value": 0
+          }
+        },
+        "frame": {
+          "overflow": {
+            "name": "hdmi_in0_frame_overflow",
+            "address": 1610660028,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758143676,
+            "value": 0
+          }
+        },
+        "dma": {
+          "frame": {
+            "size": {
+              "name": "hdmi_in0_dma_frame_size",
+              "address": 1610660032,
+              "size": 4,
+              "r": "rw",
+              "shadowed_address": 3758143680,
+              "value": 0
+            }
+          },
+          "ev": {
+            "status": {
+              "name": "hdmi_in0_dma_ev_status",
+              "address": 1610660088,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758143736,
+              "value": 0
+            },
+            "pending": {
+              "name": "hdmi_in0_dma_ev_pending",
+              "address": 1610660092,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758143740,
+              "value": 0
+            },
+            "enable": {
+              "name": "hdmi_in0_dma_ev_enable",
+              "address": 1610660096,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758143744,
+              "value": 0
+            }
+          },
+          "slot": [
+            {
+              "status": {
+                "name": "hdmi_in0_dma_slot0_status",
+                "address": 1610660048,
+                "size": 1,
+                "r": "rw",
+                "shadowed_address": 3758143696,
+                "value": 0
+              },
+              "address": {
+                "name": "hdmi_in0_dma_slot0_address",
+                "address": 1610660052,
+                "size": 4,
+                "r": "rw",
+                "shadowed_address": 3758143700,
+                "value": 0
+              }
+            },
+            {
+              "status": {
+                "name": "hdmi_in0_dma_slot1_status",
+                "address": 1610660068,
+                "size": 1,
+                "r": "rw",
+                "shadowed_address": 3758143716,
+                "value": 0
+              },
+              "address": {
+                "name": "hdmi_in0_dma_slot1_address",
+                "address": 1610660072,
+                "size": 4,
+                "r": "rw",
+                "shadowed_address": 3758143720,
+                "value": 0
+              }
+            }
+          ]
+        },
+        "freq": {
+          "value": {
+            "name": "hdmi_in0_freq_value",
+            "address": 1610661888,
+            "size": 4,
+            "r": "ro",
+            "shadowed_address": 3758145536,
+            "value": 0
+          }
+        },
+        "data": [
+          {
+            "cap": {
+              "dly": {
+                "ctl": {
+                  "name": "hdmi_in0_data0_cap_dly_ctl",
+                  "address": 1610659888,
+                  "size": 1,
+                  "r": "rw",
+                  "shadowed_address": 3758143536,
+                  "value": 0
+                },
+                "busy": {
+                  "name": "hdmi_in0_data0_cap_dly_busy",
+                  "address": 1610659892,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758143540,
+                  "value": 0
+                }
+              },
+              "phase": {
+                "name": "hdmi_in0_data0_cap_phase",
+                "address": 1610659896,
+                "size": 1,
+                "r": "ro",
+                "shadowed_address": 3758143544,
+                "value": 0
+              }
+            },
+            "charsync": {
+              "char": {
+                "synced": {
+                  "name": "hdmi_in0_data0_charsync_char_synced",
+                  "address": 1610659904,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758143552,
+                  "value": 0
+                }
+              },
+              "ctl": {
+                "pos": {
+                  "name": "hdmi_in0_data0_charsync_ctl_pos",
+                  "address": 1610659908,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758143556,
+                  "value": 0
+                }
+              }
+            },
+            "wer": {
+              "update": {
+                "name": "hdmi_in0_data0_wer_update",
+                "address": 1610659912,
+                "size": 1,
+                "r": "rw",
+                "shadowed_address": 3758143560,
+                "value": 0
+              },
+              "value": {
+                "name": "hdmi_in0_data0_wer_value",
+                "address": 1610659916,
+                "size": 3,
+                "r": "ro",
+                "shadowed_address": 3758143564,
+                "value": 0
+              }
+            }
+          },
+          {
+            "cap": {
+              "dly": {
+                "ctl": {
+                  "name": "hdmi_in0_data1_cap_dly_ctl",
+                  "address": 1610659928,
+                  "size": 1,
+                  "r": "rw",
+                  "shadowed_address": 3758143576,
+                  "value": 0
+                },
+                "busy": {
+                  "name": "hdmi_in0_data1_cap_dly_busy",
+                  "address": 1610659932,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758143580,
+                  "value": 0
+                }
+              },
+              "phase": {
+                "name": "hdmi_in0_data1_cap_phase",
+                "address": 1610659936,
+                "size": 1,
+                "r": "ro",
+                "shadowed_address": 3758143584,
+                "value": 0
+              }
+            },
+            "charsync": {
+              "char": {
+                "synced": {
+                  "name": "hdmi_in0_data1_charsync_char_synced",
+                  "address": 1610659944,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758143592,
+                  "value": 0
+                }
+              },
+              "ctl": {
+                "pos": {
+                  "name": "hdmi_in0_data1_charsync_ctl_pos",
+                  "address": 1610659948,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758143596,
+                  "value": 0
+                }
+              }
+            },
+            "wer": {
+              "update": {
+                "name": "hdmi_in0_data1_wer_update",
+                "address": 1610659952,
+                "size": 1,
+                "r": "rw",
+                "shadowed_address": 3758143600,
+                "value": 0
+              },
+              "value": {
+                "name": "hdmi_in0_data1_wer_value",
+                "address": 1610659956,
+                "size": 3,
+                "r": "ro",
+                "shadowed_address": 3758143604,
+                "value": 0
+              }
+            }
+          },
+          {
+            "cap": {
+              "dly": {
+                "ctl": {
+                  "name": "hdmi_in0_data2_cap_dly_ctl",
+                  "address": 1610659968,
+                  "size": 1,
+                  "r": "rw",
+                  "shadowed_address": 3758143616,
+                  "value": 0
+                },
+                "busy": {
+                  "name": "hdmi_in0_data2_cap_dly_busy",
+                  "address": 1610659972,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758143620,
+                  "value": 0
+                }
+              },
+              "phase": {
+                "name": "hdmi_in0_data2_cap_phase",
+                "address": 1610659976,
+                "size": 1,
+                "r": "ro",
+                "shadowed_address": 3758143624,
+                "value": 0
+              }
+            },
+            "charsync": {
+              "char": {
+                "synced": {
+                  "name": "hdmi_in0_data2_charsync_char_synced",
+                  "address": 1610659984,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758143632,
+                  "value": 0
+                }
+              },
+              "ctl": {
+                "pos": {
+                  "name": "hdmi_in0_data2_charsync_ctl_pos",
+                  "address": 1610659988,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758143636,
+                  "value": 0
+                }
+              }
+            },
+            "wer": {
+              "update": {
+                "name": "hdmi_in0_data2_wer_update",
+                "address": 1610659992,
+                "size": 1,
+                "r": "rw",
+                "shadowed_address": 3758143640,
+                "value": 0
+              },
+              "value": {
+                "name": "hdmi_in0_data2_wer_value",
+                "address": 1610659996,
+                "size": 3,
+                "r": "ro",
+                "shadowed_address": 3758143644,
+                "value": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "edid": {
+          "hpd": {
+            "notif": {
+              "name": "hdmi_in1_edid_hpd_notif",
+              "address": 1610665984,
+              "size": 1,
+              "r": "ro",
+              "shadowed_address": 3758149632,
+              "value": 0
+            }
+          }
+        },
+        "clocking": {
+          "locked": {
+            "name": "hdmi_in1_clocking_locked",
+            "address": 1610665996,
+            "size": 1,
+            "r": "ro",
+            "shadowed_address": 3758149644,
+            "value": 0
+          },
+          "pll": {
+            "adr": {
+              "name": "hdmi_in1_clocking_pll_adr",
+              "address": 1610666000,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758149648,
+              "value": 0
+            },
+            "dat": {
+              "r": {
+                "name": "hdmi_in1_clocking_pll_dat_r",
+                "address": 1610666004,
+                "size": 2,
+                "r": "ro",
+                "shadowed_address": 3758149652,
+                "value": 0
+              },
+              "w": {
+                "name": "hdmi_in1_clocking_pll_dat_w",
+                "address": 1610666012,
+                "size": 2,
+                "r": "rw",
+                "shadowed_address": 3758149660,
+                "value": 0
+              }
+            },
+            "read": {
+              "name": "hdmi_in1_clocking_pll_read",
+              "address": 1610666020,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758149668,
+              "value": 0
+            },
+            "write": {
+              "name": "hdmi_in1_clocking_pll_write",
+              "address": 1610666024,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758149672,
+              "value": 0
+            },
+            "drdy": {
+              "name": "hdmi_in1_clocking_pll_drdy",
+              "address": 1610666028,
+              "size": 1,
+              "r": "ro",
+              "shadowed_address": 3758149676,
+              "value": 0
+            }
+          }
+        },
+        "chansync": {
+          "channels": {
+            "synced": {
+              "name": "hdmi_in1_chansync_channels_synced",
+              "address": 1610666152,
+              "size": 1,
+              "r": "ro",
+              "shadowed_address": 3758149800,
+              "value": 0
+            }
+          }
+        },
+        "resdetection": {
+          "hres": {
+            "name": "hdmi_in1_resdetection_hres",
+            "address": 1610666156,
+            "size": 2,
+            "r": "ro",
+            "shadowed_address": 3758149804,
+            "value": 0
+          },
+          "vres": {
+            "name": "hdmi_in1_resdetection_vres",
+            "address": 1610666164,
+            "size": 2,
+            "r": "ro",
+            "shadowed_address": 3758149812,
+            "value": 0
+          }
+        },
+        "frame": {
+          "overflow": {
+            "name": "hdmi_in1_frame_overflow",
+            "address": 1610666172,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758149820,
+            "value": 0
+          }
+        },
+        "dma": {
+          "frame": {
+            "size": {
+              "name": "hdmi_in1_dma_frame_size",
+              "address": 1610666176,
+              "size": 4,
+              "r": "rw",
+              "shadowed_address": 3758149824,
+              "value": 0
+            }
+          },
+          "ev": {
+            "status": {
+              "name": "hdmi_in1_dma_ev_status",
+              "address": 1610666232,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758149880,
+              "value": 0
+            },
+            "pending": {
+              "name": "hdmi_in1_dma_ev_pending",
+              "address": 1610666236,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758149884,
+              "value": 0
+            },
+            "enable": {
+              "name": "hdmi_in1_dma_ev_enable",
+              "address": 1610666240,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758149888,
+              "value": 0
+            }
+          },
+          "slot": [
+            {
+              "status": {
+                "name": "hdmi_in1_dma_slot0_status",
+                "address": 1610666192,
+                "size": 1,
+                "r": "rw",
+                "shadowed_address": 3758149840,
+                "value": 0
+              },
+              "address": {
+                "name": "hdmi_in1_dma_slot0_address",
+                "address": 1610666196,
+                "size": 4,
+                "r": "rw",
+                "shadowed_address": 3758149844,
+                "value": 0
+              }
+            },
+            {
+              "status": {
+                "name": "hdmi_in1_dma_slot1_status",
+                "address": 1610666212,
+                "size": 1,
+                "r": "rw",
+                "shadowed_address": 3758149860,
+                "value": 0
+              },
+              "address": {
+                "name": "hdmi_in1_dma_slot1_address",
+                "address": 1610666216,
+                "size": 4,
+                "r": "rw",
+                "shadowed_address": 3758149864,
+                "value": 0
+              }
+            }
+          ]
+        },
+        "freq": {
+          "value": {
+            "name": "hdmi_in1_freq_value",
+            "address": 1610668032,
+            "size": 4,
+            "r": "ro",
+            "shadowed_address": 3758151680,
+            "value": 0
+          }
+        },
+        "data": [
+          {
+            "cap": {
+              "dly": {
+                "ctl": {
+                  "name": "hdmi_in1_data0_cap_dly_ctl",
+                  "address": 1610666032,
+                  "size": 1,
+                  "r": "rw",
+                  "shadowed_address": 3758149680,
+                  "value": 0
+                },
+                "busy": {
+                  "name": "hdmi_in1_data0_cap_dly_busy",
+                  "address": 1610666036,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758149684,
+                  "value": 0
+                }
+              },
+              "phase": {
+                "name": "hdmi_in1_data0_cap_phase",
+                "address": 1610666040,
+                "size": 1,
+                "r": "ro",
+                "shadowed_address": 3758149688,
+                "value": 0
+              }
+            },
+            "charsync": {
+              "char": {
+                "synced": {
+                  "name": "hdmi_in1_data0_charsync_char_synced",
+                  "address": 1610666048,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758149696,
+                  "value": 0
+                }
+              },
+              "ctl": {
+                "pos": {
+                  "name": "hdmi_in1_data0_charsync_ctl_pos",
+                  "address": 1610666052,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758149700,
+                  "value": 0
+                }
+              }
+            },
+            "wer": {
+              "update": {
+                "name": "hdmi_in1_data0_wer_update",
+                "address": 1610666056,
+                "size": 1,
+                "r": "rw",
+                "shadowed_address": 3758149704,
+                "value": 0
+              },
+              "value": {
+                "name": "hdmi_in1_data0_wer_value",
+                "address": 1610666060,
+                "size": 3,
+                "r": "ro",
+                "shadowed_address": 3758149708,
+                "value": 0
+              }
+            }
+          },
+          {
+            "cap": {
+              "dly": {
+                "ctl": {
+                  "name": "hdmi_in1_data1_cap_dly_ctl",
+                  "address": 1610666072,
+                  "size": 1,
+                  "r": "rw",
+                  "shadowed_address": 3758149720,
+                  "value": 0
+                },
+                "busy": {
+                  "name": "hdmi_in1_data1_cap_dly_busy",
+                  "address": 1610666076,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758149724,
+                  "value": 0
+                }
+              },
+              "phase": {
+                "name": "hdmi_in1_data1_cap_phase",
+                "address": 1610666080,
+                "size": 1,
+                "r": "ro",
+                "shadowed_address": 3758149728,
+                "value": 0
+              }
+            },
+            "charsync": {
+              "char": {
+                "synced": {
+                  "name": "hdmi_in1_data1_charsync_char_synced",
+                  "address": 1610666088,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758149736,
+                  "value": 0
+                }
+              },
+              "ctl": {
+                "pos": {
+                  "name": "hdmi_in1_data1_charsync_ctl_pos",
+                  "address": 1610666092,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758149740,
+                  "value": 0
+                }
+              }
+            },
+            "wer": {
+              "update": {
+                "name": "hdmi_in1_data1_wer_update",
+                "address": 1610666096,
+                "size": 1,
+                "r": "rw",
+                "shadowed_address": 3758149744,
+                "value": 0
+              },
+              "value": {
+                "name": "hdmi_in1_data1_wer_value",
+                "address": 1610666100,
+                "size": 3,
+                "r": "ro",
+                "shadowed_address": 3758149748,
+                "value": 0
+              }
+            }
+          },
+          {
+            "cap": {
+              "dly": {
+                "ctl": {
+                  "name": "hdmi_in1_data2_cap_dly_ctl",
+                  "address": 1610666112,
+                  "size": 1,
+                  "r": "rw",
+                  "shadowed_address": 3758149760,
+                  "value": 0
+                },
+                "busy": {
+                  "name": "hdmi_in1_data2_cap_dly_busy",
+                  "address": 1610666116,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758149764,
+                  "value": 0
+                }
+              },
+              "phase": {
+                "name": "hdmi_in1_data2_cap_phase",
+                "address": 1610666120,
+                "size": 1,
+                "r": "ro",
+                "shadowed_address": 3758149768,
+                "value": 0
+              }
+            },
+            "charsync": {
+              "char": {
+                "synced": {
+                  "name": "hdmi_in1_data2_charsync_char_synced",
+                  "address": 1610666128,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758149776,
+                  "value": 0
+                }
+              },
+              "ctl": {
+                "pos": {
+                  "name": "hdmi_in1_data2_charsync_ctl_pos",
+                  "address": 1610666132,
+                  "size": 1,
+                  "r": "ro",
+                  "shadowed_address": 3758149780,
+                  "value": 0
+                }
+              }
+            },
+            "wer": {
+              "update": {
+                "name": "hdmi_in1_data2_wer_update",
+                "address": 1610666136,
+                "size": 1,
+                "r": "rw",
+                "shadowed_address": 3758149784,
+                "value": 0
+              },
+              "value": {
+                "name": "hdmi_in1_data2_wer_value",
+                "address": 1610666140,
+                "size": 3,
+                "r": "ro",
+                "shadowed_address": 3758149788,
+                "value": 0
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "out": [
+      {
+        "core": {
+          "underflow": {
+            "enable": {
+              "name": "hdmi_out0_core_underflow_enable",
+              "address": 1610655744,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758139392,
+              "value": 0
+            },
+            "update": {
+              "name": "hdmi_out0_core_underflow_update",
+              "address": 1610655748,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758139396,
+              "value": 0
+            },
+            "counter": {
+              "name": "hdmi_out0_core_underflow_counter",
+              "address": 1610655752,
+              "size": 4,
+              "r": "ro",
+              "shadowed_address": 3758139400,
+              "value": 0
+            }
+          },
+          "initiator": {
+            "enable": {
+              "name": "hdmi_out0_core_initiator_enable",
+              "address": 1610655768,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758139416,
+              "value": 0
+            },
+            "hres": {
+              "name": "hdmi_out0_core_initiator_hres",
+              "address": 1610655772,
+              "size": 2,
+              "r": "rw",
+              "shadowed_address": 3758139420,
+              "value": 0
+            },
+            "hsync": {
+              "start": {
+                "name": "hdmi_out0_core_initiator_hsync_start",
+                "address": 1610655780,
+                "size": 2,
+                "r": "rw",
+                "shadowed_address": 3758139428,
+                "value": 0
+              },
+              "end": {
+                "name": "hdmi_out0_core_initiator_hsync_end",
+                "address": 1610655788,
+                "size": 2,
+                "r": "rw",
+                "shadowed_address": 3758139436,
+                "value": 0
+              }
+            },
+            "hscan": {
+              "name": "hdmi_out0_core_initiator_hscan",
+              "address": 1610655796,
+              "size": 2,
+              "r": "rw",
+              "shadowed_address": 3758139444,
+              "value": 0
+            },
+            "vres": {
+              "name": "hdmi_out0_core_initiator_vres",
+              "address": 1610655804,
+              "size": 2,
+              "r": "rw",
+              "shadowed_address": 3758139452,
+              "value": 0
+            },
+            "vsync": {
+              "start": {
+                "name": "hdmi_out0_core_initiator_vsync_start",
+                "address": 1610655812,
+                "size": 2,
+                "r": "rw",
+                "shadowed_address": 3758139460,
+                "value": 0
+              },
+              "end": {
+                "name": "hdmi_out0_core_initiator_vsync_end",
+                "address": 1610655820,
+                "size": 2,
+                "r": "rw",
+                "shadowed_address": 3758139468,
+                "value": 0
+              }
+            },
+            "vscan": {
+              "name": "hdmi_out0_core_initiator_vscan",
+              "address": 1610655828,
+              "size": 2,
+              "r": "rw",
+              "shadowed_address": 3758139476,
+              "value": 0
+            },
+            "base": {
+              "name": "hdmi_out0_core_initiator_base",
+              "address": 1610655836,
+              "size": 4,
+              "r": "rw",
+              "shadowed_address": 3758139484,
+              "value": 0
+            },
+            "length": {
+              "name": "hdmi_out0_core_initiator_length",
+              "address": 1610655852,
+              "size": 4,
+              "r": "rw",
+              "shadowed_address": 3758139500,
+              "value": 0
+            }
+          },
+          "dma": {
+            "delay": {
+              "base": {
+                "name": "hdmi_out0_core_dma_delay_base",
+                "address": 1610655868,
+                "size": 4,
+                "r": "rw",
+                "shadowed_address": 3758139516,
+                "value": 0
+              }
+            }
+          }
+        },
+        "driver": {
+          "clocking": {
+            "cmd": {
+              "data": {
+                "name": "hdmi_out0_driver_clocking_cmd_data",
+                "address": 1610655884,
+                "size": 2,
+                "r": "rw",
+                "shadowed_address": 3758139532,
+                "value": 0
+              }
+            },
+            "send": {
+              "cmd": {
+                "data": {
+                  "name": "hdmi_out0_driver_clocking_send_cmd_data",
+                  "address": 1610655892,
+                  "size": 1,
+                  "r": "rw",
+                  "shadowed_address": 3758139540,
+                  "value": 0
+                }
+              },
+              "go": {
+                "name": "hdmi_out0_driver_clocking_send_go",
+                "address": 1610655896,
+                "size": 1,
+                "r": "rw",
+                "shadowed_address": 3758139544,
+                "value": 0
+              }
+            },
+            "status": {
+              "name": "hdmi_out0_driver_clocking_status",
+              "address": 1610655900,
+              "size": 1,
+              "r": "ro",
+              "shadowed_address": 3758139548,
+              "value": 0
+            },
+            "pll": {
+              "adr": {
+                "name": "hdmi_out0_driver_clocking_pll_adr",
+                "address": 1610655908,
+                "size": 1,
+                "r": "rw",
+                "shadowed_address": 3758139556,
+                "value": 0
+              },
+              "dat": {
+                "r": {
+                  "name": "hdmi_out0_driver_clocking_pll_dat_r",
+                  "address": 1610655912,
+                  "size": 2,
+                  "r": "ro",
+                  "shadowed_address": 3758139560,
+                  "value": 0
+                },
+                "w": {
+                  "name": "hdmi_out0_driver_clocking_pll_dat_w",
+                  "address": 1610655920,
+                  "size": 2,
+                  "r": "rw",
+                  "shadowed_address": 3758139568,
+                  "value": 0
+                }
+              },
+              "read": {
+                "name": "hdmi_out0_driver_clocking_pll_read",
+                "address": 1610655928,
+                "size": 1,
+                "r": "rw",
+                "shadowed_address": 3758139576,
+                "value": 0
+              },
+              "write": {
+                "name": "hdmi_out0_driver_clocking_pll_write",
+                "address": 1610655932,
+                "size": 1,
+                "r": "rw",
+                "shadowed_address": 3758139580,
+                "value": 0
+              },
+              "drdy": {
+                "name": "hdmi_out0_driver_clocking_pll_drdy",
+                "address": 1610655936,
+                "size": 1,
+                "r": "ro",
+                "shadowed_address": 3758139584,
+                "value": 0
+              }
+            }
+          }
+        },
+        "i2c": {
+          "w": {
+            "name": "hdmi_out0_i2c_w",
+            "address": 1610655940,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758139588,
+            "value": 0
+          },
+          "r": {
+            "name": "hdmi_out0_i2c_r",
+            "address": 1610655944,
+            "size": 1,
+            "r": "ro",
+            "shadowed_address": 3758139592,
+            "value": 0
+          }
+        }
+      },
+      {
+        "core": {
+          "underflow": {
+            "enable": {
+              "name": "hdmi_out1_core_underflow_enable",
+              "address": 1610657792,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758141440,
+              "value": 0
+            },
+            "update": {
+              "name": "hdmi_out1_core_underflow_update",
+              "address": 1610657796,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758141444,
+              "value": 0
+            },
+            "counter": {
+              "name": "hdmi_out1_core_underflow_counter",
+              "address": 1610657800,
+              "size": 4,
+              "r": "ro",
+              "shadowed_address": 3758141448,
+              "value": 0
+            }
+          },
+          "initiator": {
+            "enable": {
+              "name": "hdmi_out1_core_initiator_enable",
+              "address": 1610657816,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758141464,
+              "value": 0
+            },
+            "hres": {
+              "name": "hdmi_out1_core_initiator_hres",
+              "address": 1610657820,
+              "size": 2,
+              "r": "rw",
+              "shadowed_address": 3758141468,
+              "value": 0
+            },
+            "hsync": {
+              "start": {
+                "name": "hdmi_out1_core_initiator_hsync_start",
+                "address": 1610657828,
+                "size": 2,
+                "r": "rw",
+                "shadowed_address": 3758141476,
+                "value": 0
+              },
+              "end": {
+                "name": "hdmi_out1_core_initiator_hsync_end",
+                "address": 1610657836,
+                "size": 2,
+                "r": "rw",
+                "shadowed_address": 3758141484,
+                "value": 0
+              }
+            },
+            "hscan": {
+              "name": "hdmi_out1_core_initiator_hscan",
+              "address": 1610657844,
+              "size": 2,
+              "r": "rw",
+              "shadowed_address": 3758141492,
+              "value": 0
+            },
+            "vres": {
+              "name": "hdmi_out1_core_initiator_vres",
+              "address": 1610657852,
+              "size": 2,
+              "r": "rw",
+              "shadowed_address": 3758141500,
+              "value": 0
+            },
+            "vsync": {
+              "start": {
+                "name": "hdmi_out1_core_initiator_vsync_start",
+                "address": 1610657860,
+                "size": 2,
+                "r": "rw",
+                "shadowed_address": 3758141508,
+                "value": 0
+              },
+              "end": {
+                "name": "hdmi_out1_core_initiator_vsync_end",
+                "address": 1610657868,
+                "size": 2,
+                "r": "rw",
+                "shadowed_address": 3758141516,
+                "value": 0
+              }
+            },
+            "vscan": {
+              "name": "hdmi_out1_core_initiator_vscan",
+              "address": 1610657876,
+              "size": 2,
+              "r": "rw",
+              "shadowed_address": 3758141524,
+              "value": 0
+            },
+            "base": {
+              "name": "hdmi_out1_core_initiator_base",
+              "address": 1610657884,
+              "size": 4,
+              "r": "rw",
+              "shadowed_address": 3758141532,
+              "value": 0
+            },
+            "length": {
+              "name": "hdmi_out1_core_initiator_length",
+              "address": 1610657900,
+              "size": 4,
+              "r": "rw",
+              "shadowed_address": 3758141548,
+              "value": 0
+            }
+          },
+          "dma": {
+            "delay": {
+              "base": {
+                "name": "hdmi_out1_core_dma_delay_base",
+                "address": 1610657916,
+                "size": 4,
+                "r": "rw",
+                "shadowed_address": 3758141564,
+                "value": 0
+              }
+            }
+          }
+        },
+        "i2c": {
+          "w": {
+            "name": "hdmi_out1_i2c_w",
+            "address": 1610657932,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758141580,
+            "value": 0
+          },
+          "r": {
+            "name": "hdmi_out1_i2c_r",
+            "address": 1610657936,
+            "size": 1,
+            "r": "ro",
+            "shadowed_address": 3758141584,
+            "value": 0
+          }
+        }
+      }
+    ]
+  },
+  "info": {
+    "dna": {
+      "id": {
+        "name": "info_dna_id",
+        "address": 1610639360,
+        "size": 8,
+        "r": "ro",
+        "shadowed_address": 3758123008,
+        "value": 0
+      }
+    },
+    "git": {
+      "commit": {
+        "name": "info_git_commit",
+        "address": 1610639392,
+        "size": 20,
+        "r": "ro",
+        "shadowed_address": 3758123040,
+        "value": 0
+      }
+    },
+    "platform": {
+      "platform": {
+        "name": "info_platform_platform",
+        "address": 1610639472,
+        "size": 8,
+        "r": "ro",
+        "shadowed_address": 3758123120,
+        "value": 0
+      },
+      "target": {
+        "name": "info_platform_target",
+        "address": 1610639504,
+        "size": 8,
+        "r": "ro",
+        "shadowed_address": 3758123152,
+        "value": 0
+      }
+    }
+  },
+  "opsis": {
+    "i2c": {
+      "master": {
+        "w": {
+          "name": "opsis_i2c_master_w",
+          "address": 1610647552,
+          "size": 1,
+          "r": "rw",
+          "shadowed_address": 3758131200,
+          "value": 0
+        },
+        "r": {
+          "name": "opsis_i2c_master_r",
+          "address": 1610647556,
+          "size": 1,
+          "r": "ro",
+          "shadowed_address": 3758131204,
+          "value": 0
+        }
+      },
+      "fx2": {
+        "reset": {
+          "out": {
+            "name": "opsis_i2c_fx2_reset_out",
+            "address": 1610647560,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758131208,
+            "value": 0
+          }
+        },
+        "hack": {
+          "shift": {
+            "reg": {
+              "name": "opsis_i2c_fx2_hack_shift_reg",
+              "address": 1610647564,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758131212,
+              "value": 0
+            }
+          },
+          "status": {
+            "name": "opsis_i2c_fx2_hack_status",
+            "address": 1610647568,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758131216,
+            "value": 0
+          },
+          "slave": {
+            "addr": {
+              "name": "opsis_i2c_fx2_hack_slave_addr",
+              "address": 1610647572,
+              "size": 1,
+              "r": "rw",
+              "shadowed_address": 3758131220,
+              "value": 0
+            }
+          }
+        }
+      },
+      "mux": {
+        "sel": {
+          "name": "opsis_i2c_mux_sel",
+          "address": 1610647576,
+          "size": 1,
+          "r": "rw",
+          "shadowed_address": 3758131224,
+          "value": 0
+        }
+      }
+    }
+  },
+  "sdram": {
+    "dfii": {
+      "control": {
+        "name": "sdram_dfii_control",
+        "address": 1610629120,
+        "size": 1,
+        "r": "rw",
+        "shadowed_address": 3758112768,
+        "value": 0
+      },
+      "pi": [
+        {
+          "command": {
+            "name": "sdram_dfii_pi0_command",
+            "address": 1610629124,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758112772,
+            "value": 0
+          },
+          "address": {
+            "name": "sdram_dfii_pi0_address",
+            "address": 1610629132,
+            "size": 2,
+            "r": "rw",
+            "shadowed_address": 3758112780,
+            "value": 0
+          },
+          "baddress": {
+            "name": "sdram_dfii_pi0_baddress",
+            "address": 1610629140,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758112788,
+            "value": 0
+          },
+          "wrdata": {
+            "name": "sdram_dfii_pi0_wrdata",
+            "address": 1610629144,
+            "size": 4,
+            "r": "rw",
+            "shadowed_address": 3758112792,
+            "value": 0
+          },
+          "rddata": {
+            "name": "sdram_dfii_pi0_rddata",
+            "address": 1610629160,
+            "size": 4,
+            "r": "ro",
+            "shadowed_address": 3758112808,
+            "value": 0
+          }
+        },
+        {
+          "command": {
+            "name": "sdram_dfii_pi1_command",
+            "address": 1610629176,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758112824,
+            "value": 0
+          },
+          "address": {
+            "name": "sdram_dfii_pi1_address",
+            "address": 1610629184,
+            "size": 2,
+            "r": "rw",
+            "shadowed_address": 3758112832,
+            "value": 0
+          },
+          "baddress": {
+            "name": "sdram_dfii_pi1_baddress",
+            "address": 1610629192,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758112840,
+            "value": 0
+          },
+          "wrdata": {
+            "name": "sdram_dfii_pi1_wrdata",
+            "address": 1610629196,
+            "size": 4,
+            "r": "rw",
+            "shadowed_address": 3758112844,
+            "value": 0
+          },
+          "rddata": {
+            "name": "sdram_dfii_pi1_rddata",
+            "address": 1610629212,
+            "size": 4,
+            "r": "ro",
+            "shadowed_address": 3758112860,
+            "value": 0
+          }
+        },
+        {
+          "command": {
+            "name": "sdram_dfii_pi2_command",
+            "address": 1610629228,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758112876,
+            "value": 0
+          },
+          "address": {
+            "name": "sdram_dfii_pi2_address",
+            "address": 1610629236,
+            "size": 2,
+            "r": "rw",
+            "shadowed_address": 3758112884,
+            "value": 0
+          },
+          "baddress": {
+            "name": "sdram_dfii_pi2_baddress",
+            "address": 1610629244,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758112892,
+            "value": 0
+          },
+          "wrdata": {
+            "name": "sdram_dfii_pi2_wrdata",
+            "address": 1610629248,
+            "size": 4,
+            "r": "rw",
+            "shadowed_address": 3758112896,
+            "value": 0
+          },
+          "rddata": {
+            "name": "sdram_dfii_pi2_rddata",
+            "address": 1610629264,
+            "size": 4,
+            "r": "ro",
+            "shadowed_address": 3758112912,
+            "value": 0
+          }
+        },
+        {
+          "command": {
+            "name": "sdram_dfii_pi3_command",
+            "address": 1610629280,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758112928,
+            "value": 0
+          },
+          "address": {
+            "name": "sdram_dfii_pi3_address",
+            "address": 1610629288,
+            "size": 2,
+            "r": "rw",
+            "shadowed_address": 3758112936,
+            "value": 0
+          },
+          "baddress": {
+            "name": "sdram_dfii_pi3_baddress",
+            "address": 1610629296,
+            "size": 1,
+            "r": "rw",
+            "shadowed_address": 3758112944,
+            "value": 0
+          },
+          "wrdata": {
+            "name": "sdram_dfii_pi3_wrdata",
+            "address": 1610629300,
+            "size": 4,
+            "r": "rw",
+            "shadowed_address": 3758112948,
+            "value": 0
+          },
+          "rddata": {
+            "name": "sdram_dfii_pi3_rddata",
+            "address": 1610629316,
+            "size": 4,
+            "r": "ro",
+            "shadowed_address": 3758112964,
+            "value": 0
+          }
+        }
+      ]
+    },
+    "controller": {
+      "bandwidth": {
+        "update": {
+          "name": "sdram_controller_bandwidth_update",
+          "address": 1610629332,
+          "size": 1,
+          "r": "rw",
+          "shadowed_address": 3758112980,
+          "value": 0
+        },
+        "nreads": {
+          "name": "sdram_controller_bandwidth_nreads",
+          "address": 1610629336,
+          "size": 3,
+          "r": "ro",
+          "shadowed_address": 3758112984,
+          "value": 0
+        },
+        "nwrites": {
+          "name": "sdram_controller_bandwidth_nwrites",
+          "address": 1610629348,
+          "size": 3,
+          "r": "ro",
+          "shadowed_address": 3758112996,
+          "value": 0
+        },
+        "data": {
+          "width": {
+            "name": "sdram_controller_bandwidth_data_width",
+            "address": 1610629360,
+            "size": 1,
+            "r": "ro",
+            "shadowed_address": 3758113008,
+            "value": 0
+          }
+        }
+      }
+    }
+  },
+  "spiflash": {
+    "bitbang": {
+      "name": "spiflash_bitbang",
+      "address": 1610633216,
+      "size": 1,
+      "r": "rw",
+      "shadowed_address": 3758116864,
+      "value": 0
+    },
+    "miso": {
+      "name": "spiflash_miso",
+      "address": 1610633220,
+      "size": 1,
+      "r": "ro",
+      "shadowed_address": 3758116868,
+      "value": 0
+    }
+  },
+  "uart": {
+    "rxtx": {
+      "name": "uart_rxtx",
+      "address": 1610649600,
+      "size": 1,
+      "r": "rw",
+      "shadowed_address": 3758133248,
+      "value": 0
+    },
+    "txfull": {
+      "name": "uart_txfull",
+      "address": 1610649604,
+      "size": 1,
+      "r": "ro",
+      "shadowed_address": 3758133252,
+      "value": 0
+    },
+    "rxempty": {
+      "name": "uart_rxempty",
+      "address": 1610649608,
+      "size": 1,
+      "r": "ro",
+      "shadowed_address": 3758133256,
+      "value": 0
+    },
+    "ev": {
+      "status": {
+        "name": "uart_ev_status",
+        "address": 1610649612,
+        "size": 1,
+        "r": "rw",
+        "shadowed_address": 3758133260,
+        "value": 0
+      },
+      "pending": {
+        "name": "uart_ev_pending",
+        "address": 1610649616,
+        "size": 1,
+        "r": "rw",
+        "shadowed_address": 3758133264,
+        "value": 0
+      },
+      "enable": {
+        "name": "uart_ev_enable",
+        "address": 1610649620,
+        "size": 1,
+        "r": "rw",
+        "shadowed_address": 3758133268,
+        "value": 0
+      }
+    }
+  },
+  "timer": [
+    {
+      "load": {
+        "name": "timer0_load",
+        "address": 1610618880,
+        "size": 4,
+        "r": "rw",
+        "shadowed_address": 3758102528,
+        "value": 0
+      },
+      "reload": {
+        "name": "timer0_reload",
+        "address": 1610618896,
+        "size": 4,
+        "r": "rw",
+        "shadowed_address": 3758102544,
+        "value": 0
+      },
+      "update": {
+        "value": {
+          "name": "timer0_update_value",
+          "address": 1610618916,
+          "size": 1,
+          "r": "rw",
+          "shadowed_address": 3758102564,
+          "value": 0
+        }
+      },
+      "value": {
+        "name": "timer0_value",
+        "address": 1610618920,
+        "size": 4,
+        "r": "ro",
+        "shadowed_address": 3758102568,
+        "value": 0
+      },
+      "ev": {
+        "status": {
+          "name": "timer0_ev_status",
+          "address": 1610618936,
+          "size": 1,
+          "r": "rw",
+          "shadowed_address": 3758102584,
+          "value": 0
+        },
+        "pending": {
+          "name": "timer0_ev_pending",
+          "address": 1610618940,
+          "size": 1,
+          "r": "rw",
+          "shadowed_address": 3758102588,
+          "value": 0
+        },
+        "enable": {
+          "name": "timer0_ev_enable",
+          "address": 1610618944,
+          "size": 1,
+          "r": "rw",
+          "shadowed_address": 3758102592,
+          "value": 0
+        }
+      }
+    }
+  ]
+}
